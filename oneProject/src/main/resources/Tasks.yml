@@ -1,0 +1,16 @@
+tasks:
+  - jobName: FirstJob
+    triggerTime: 0 0 0-23 * * ? *
+    jobs:
+      - job: FirstJobOne
+        order: 1
+      - job: FirstJobTwo
+        order: 2
+
+  - jobName: SecondJob
+    triggerTime: 0 0 0-23 * * ? *
+    jobs:
+      - job: SecondJobOne
+        order: 1
+      - job: SecondJobTwo
+        order: 2
